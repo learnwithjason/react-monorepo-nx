@@ -1,11 +1,20 @@
 .container {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 2rem 5vw;
   background-color: black;
   color: white;
 }
 
+.container nav {
+  display: flex;
+  gap: 2rem;
+}
+
 .container a {
   color: inherit;
+  display: block;
+  text-decoration: none;
 }

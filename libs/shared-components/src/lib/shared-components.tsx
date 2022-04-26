@@ -9,7 +9,7 @@ export interface PageHeaderProps {
 export function PageHeader(props: PageHeaderProps) {
   return (
     <header className={styles['container']} data-test-id="pageheader">
-      <a rel="home" href="/">{props.siteTitle}</a>
+      <a rel="home" href="/">PageHeader</a>
       {props.children}
     </header>
   );
