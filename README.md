@@ -1,6 +1,36 @@
+<p align="center">
+  <a href="https://www.learnwithjason.dev">
+    <img src="https://res.cloudinary.com/jlengstorf/image/upload/q_auto,f_auto,w_240/v1579281727/lwj/learnwithjason.png" alt="Learn With Jason" width="120" />
+  </a>
+</p>
+<h1 align="center">
+  Build and Deploy a React App from a Monorepo (with Juri Strumpflohner)
+</h1>
+<h3 align="center">
+  This app was built live on <em>Learn With Jason</em> and it was super fun and I’m sad you weren’t there.
+</h3>
+<p align="center">
+  But don’t worry! You can still: 
+  <a href="https://www.learnwithjason.dev/build-and-deploy-a-react-app-from-a-monorepo"><strong>watch the video</strong></a> · 
+  <a href="https://jason.af/lwj/schedule"><strong>see upcoming episodes</strong></a>
+</p>
+
+&nbsp;
+
+Managing large, complex, and/or multi-team codebases can be simplified by using a monorepo approach. In this episode, Juri Strumpflohner will teach us how to use Nx to build and deploy React apps.
+
+&nbsp;
+
+## More Information
+
+- [Watch this app get built live + see links and additional resources][episode]
+- [Follow _Learn With Jason_ on Twitch][twitch] to watch future episodes live
+- [Add the _Learn With Jason_ schedule to your Google Calendar][cal]
 
 
-# Lwj
+[episode]: https://www.learnwithjason.dev/build-and-deploy-a-react-app-from-a-monorepo
+[twitch]: https://jason.af/twitch
+[cal]: https://jason.af/lwj/cal
 
 This project was generated using [Nx](https://nx.dev).
 
