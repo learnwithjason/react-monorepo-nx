@@ -1,0 +1,11 @@
+.container {
+  display: block;
+  margin: 0;
+  padding: 2rem 5vw;
+  background-color: black;
+  color: white;
+}
+
+.container a {
+  color: inherit;
+}

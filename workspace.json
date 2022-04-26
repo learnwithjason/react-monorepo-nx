@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "shared-components": "libs/shared-components",
+    "shared-components-e2e": "apps/shared-components-e2e",
+    "site": "apps/site",
+    "site-e2e": "apps/site-e2e"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "root": "apps/site",
+  "sourceRoot": "apps/site/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/site",
+        "index": "apps/site/src/index.html",
+        "baseHref": "/",
+        "main": "apps/site/src/main.tsx",
+        "polyfills": "apps/site/src/polyfills.ts",
+        "tsConfig": "apps/site/tsconfig.app.json",
+        "assets": ["apps/site/src/favicon.ico", "apps/site/src/assets"],
+        "styles": ["apps/site/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/site/src/environments/environment.ts",
+              "with": "apps/site/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "site:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "site:build:development"
+        },
+        "production": {
+          "buildTarget": "site:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/site/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/site"],
+      "options": {
+        "jestConfig": "apps/site/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
